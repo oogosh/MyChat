@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <com.example.dean.mychat.widget.NormalTopBar
+        android:id="@+id/setting_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.example.dean.mychat.widget.NormalTopBar>
+
+    <Button
+        android:id="@+id/setting_about"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_item_selector"
+        android:drawableRight="@mipmap/all_clickable_icon"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="关于黑信"
+        android:textColor="@color/text_dark" />
+
+    <Button
+        android:id="@+id/setting_logout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_warning_selector"
+        android:text="退出登录"
+        android:textColor="@color/white" />
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <com.example.dean.mychat.widget.NormalTopBar
+        android:id="@+id/activity_login_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.example.dean.mychat.widget.NormalTopBar>
+
+    <FrameLayout
+        android:id="@+id/contanier_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</LinearLayout>

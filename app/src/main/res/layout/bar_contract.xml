@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@mipmap/bg_top_bar" >
+
+    <ImageView
+        android:id="@+id/bar_add_friend"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="center"
+        android:src="@drawable/btn_add_friend_selector" />
+
+    <TextView
+        android:id="@+id/bar_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:gravity="center"
+        android:text="Title"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        android:textStyle="normal" />
+
+</RelativeLayout>

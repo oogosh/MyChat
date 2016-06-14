@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <com.example.dean.mychat.widget.NormalTopBar
+        android:id="@+id/message_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.example.dean.mychat.widget.NormalTopBar>
+
+    <ListView
+        android:id="@+id/message_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:divider="@color/transparent"
+        android:dividerHeight="15dp"
+        android:listSelector="@color/transparent"
+        android:background="@color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:scrollbars="none"
+        android:transcriptMode="normal" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@mipmap/bg_top_bar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp" >
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:src="@mipmap/message_input_voice" />
+
+            <EditText
+                android:id="@+id/message_et_content"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:background="@mipmap/message_input_edittext_box" />
+
+            <Button
+                android:id="@+id/message_btn_send"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/btn_send_selector" />
+            <!--
+            <Button
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/message_input_emotion" />
+            -->
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
